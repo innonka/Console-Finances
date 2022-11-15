@@ -20,7 +20,7 @@ The code was used to calculate each of the following:
 
 Here is the screenshot of the analysis
 
-![Alt text](/Screenshot%202022-11-15%20204210.png)
+![Alt text](/Screenshot.png)
 
 The final code prints the analysis to the console.
 

@@ -25,6 +25,7 @@ Here is the screenshot of the analysis
 The final code prints the analysis to the console.
 
 ## Deployment
+https://innonka.github.io/Console-Finances/
 
 The analysis webpage is deployed using GitHub Pages.
 

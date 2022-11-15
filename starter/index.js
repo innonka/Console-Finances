@@ -1,5 +1,5 @@
 
-//1. Assign variables
+//Assign variables
 
 var total = 0; 
 var totalChanges = 0;
@@ -9,9 +9,8 @@ var greatestIncreaseMonth = "";
 var greatestDecrease = 0; 
 var greatestDecreaseMonth = "";
 
-//2. The net total amount of Profit/Losses over the entire period.
-//Sum up all the numbers,
-
+// The net total amount of Profit/Losses over the entire period
+//Use for loop
 
 
 for (var i = 0; i < finances.length; i++) {
@@ -19,7 +18,9 @@ for (var i = 0; i < finances.length; i++) {
     var date = data[0];
     var profit = data[1];
     total = total + profit;
-    
+
+    //If condition for greatest increase and greatest decrease
+
     if (i > 0) {
         var change = profit - previousProfit; 
         totalChanges = totalChanges + change;
@@ -35,11 +36,11 @@ for (var i = 0; i < finances.length; i++) {
 
     }
 
-
     previousProfit = profit;
 }
+//Calculate average changes in Profit/Losses over the entire period
 
-var averageChanges = totalChanges / (finances.length - 1); //calculate average changes in Profit/Losses over the entire period
+var averageChanges = totalChanges / (finances.length - 1); 
 
 console.log("Financial Analysis\n===================");
 console.log("Total number of months: %s", finances.length);
@@ -48,5 +49,4 @@ console.log("Average Change: $%s", averageChanges.toFixed(2));
 console.log("Greatest Increase in Profits: %s ($%s)", greatestIncreaseMonth, greatestIncrease);
 console.log("Greatest Decrease in Losses: %s ($%s)", greatestDecreaseMonth, greatestDecrease);
 
-//The greatest increase in profits (date and amount) over the entire period.
- 
+
